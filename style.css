@@ -327,7 +327,7 @@ span.scale-rating {
 span.scale-rating > label {
   position: relative;
 
-  -webkit-appearance: none;
+
 
   outline: 0 !important;
 
@@ -347,7 +347,7 @@ span.scale-rating > label {
 span.scale-rating input[type="radio"] {
   position: absolute;
 
-  -webkit-appearance: none;
+
 
   opacity: 0;
 
@@ -377,7 +377,7 @@ span.scale-rating input[type="radio"]:last-child {
 }
 
 span.scale-rating label input[type="radio"]:checked ~ label {
-  -webkit-appearance: none;
+
 
   margin: 0;
 
@@ -407,7 +407,7 @@ span.scale-rating label:before {
 span.scale-rating label {
   position: relative;
 
-  -webkit-appearance: none;
+
 
   outline: 0 !important;
 
