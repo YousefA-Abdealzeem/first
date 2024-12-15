@@ -452,6 +452,8 @@ span.scale-rating label {
       
         .logo {
           font-size: 1.5em;
+          margin-left: 120px;
+          letter-spacing: 5px;
         }
       
         .style a {
@@ -477,12 +479,12 @@ span.scale-rating label {
       
         .main-btn {
           font-size: 1em;
-          padding: 0.7em 1.5em;
+          margin-left: 75px;
         }
       
         .social-icons a {
           font-size: 1.5em;
-          padding-right: 15px;
+          margin-left: 50px;
         }
       
         .tittle {
