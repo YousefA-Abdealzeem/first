@@ -439,6 +439,16 @@ span.scale-rating label {
 
 @media(max-width :390px){
     @media (max-width: 390px) {
+      .main {
+        width: 100%;
+        min-height: 100vh; /* تأكد من تغطية الارتفاع الكامل للشاشة */
+        background: url(./images/75EB07B0-3377-4434-BF14-C04943B072CB_1_105_c.jpeg) no-repeat center center fixed;
+        background-size: cover; /* تأكد من تغطية الخلفية بالكامل */
+        display: flex;
+        flex-direction: column; /* لضمان ظهور المحتوى بشكل متناسب */
+        align-items: center; /* محاذاة المحتوى للمنتصف */
+        justify-content: center; /* محاذاة المحتوى رأسيًا */
+      }
         body {
           padding: 0;
           margin: 0;
