@@ -437,114 +437,76 @@ span.scale-rating label {
 
 
 
-@media(max-width :390px){
-    @media (max-width: 390px) {
-      .main {
-        width: 100%;
-        min-height: 100vh; /* تأكد من تغطية الارتفاع الكامل للشاشة */
-        background: url(./images/75EB07B0-3377-4434-BF14-C04943B072CB_1_105_c.jpeg) no-repeat center center fixed;
-        background-size: cover; /* تأكد من تغطية الخلفية بالكامل */
-        display: flex;
-        flex-direction: column; /* لضمان ظهور المحتوى بشكل متناسب */
-        align-items: center; /* محاذاة المحتوى للمنتصف */
-        justify-content: center; /* محاذاة المحتوى رأسيًا */
-      }
-        body {
-          padding: 0;
-          margin: 0;
-        }
-      
-        header {
-          padding: 10px 20px;
-          flex-direction: column; /* تعديل لتسهيل العرض في الشاشات الصغيرة */
-          align-items: flex-start;
-        }
-      
-        .logo {
-          font-size: 1.5em;
-          margin-left: 120px;
-          letter-spacing: 5px;
-        }
-      
-        .style a {
-          font-size: 10px;
-          padding-left: 37px;
-          color: #ffffff90;
-        }
-      
-        section {
-          padding: 50px 20px;
-        }
-      
-        .main h2 {
-          font-size: 1.5em;
-        }
-      
-        .main h2 span {
-          font-size: 2em;
-        }
-      
-        .main h3 {
-          font-size: 1.5em;
-        }
-      
-        .main-btn {
-          font-size: 1em;
-          margin-left: 75px;
-        }
-      
-        .social-icons a {
-          font-size: 1.5em;
-          margin-left: 50px;
-          color: rgba(255, 255, 255, 0.633);
-        }
-      
-        .tittle {
-          font-size: 1.8em;
-          margin-bottom: 20px;
-        }
-      
-        .content {
-          flex-direction: column; /* عرض البطاقات بشكل عمودي */
-          align-items: center;
-        }
-      
-        .card {
-          width: 90%; /* تعديل العرض لتناسب الشاشات الصغيرة */
-          margin: 10px 0;
-        }
-        .card .icon .info{
-          color: black;
-        }
-      
-        .project-card {
-          width: 90%;
-          margin: 15px 0;
-        }
-      
-        .footer {
-          flex-direction: column;
-          text-align: center;
-          padding: 20px 10px;
-        }
-      
-        .feedback {
-          width: 90%;
-          margin: 20px auto;
-        }
-      
-        .star-rating {
-          width: 150px;
-          height: 30px;
-        }
-      
-        .choice {
-          padding: 15px;
-        }
-      
-        .rate-us {
-          padding: 10px 20px;
-        }
-      }
-      
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+  }
+  .main h2{
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 1.5em; /* Smaller logo size for mobile */
+    letter-spacing: 3px;
+  }
+  .style  a{
+    font-size: 10px;
+    color: #ffffffb1;
+  }
+
+  section {
+    padding: 20px; /* Reduce section padding */
+  }
+
+  .content {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width */
+    margin: 10px 0; /* Adjust spacing between cards */
+  }
+
+  .main-btn {
+    padding: 0.7em 1.5em; /* Smaller button padding */
+    font-size: 1em; /* Adjust button font size */
+    margin-left: 150px;
+  }
+  .social-icons a{
+    color: #ffffffaf;
+    margin-left: 80px;
+  }
+  .footer .social-icons {
+    display: flex;
+    flex-direction: row; /* اجعل الاتجاه أفقيًا */
+    justify-content: center; /* مركزة العناصر أفقيًا */
+  }
+
+  .footer .social-icons a {
+    padding: 0 2px; /* تباعد أفقي بين الروابط */
+    font-size: 20px;
+    text-align: center;
+  }
+  .footer-tittle, span{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project-card {
+    width: 100%; /* Make project cards fully responsive */
+  }
+
+  .tittle {
+    font-size: 1.8em; /* Adjust font size for titles */
+  }
+
+  .footer {
+    flex-direction: column; /* Stack footer content */
+    align-items: center;
+  }
+  .social-icons{
+    align-items: center;
+  }
 }
