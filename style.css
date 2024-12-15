@@ -46,7 +46,7 @@ section {
 }
 
 .main {
-  width: 100%;
+  width: 100vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -437,76 +437,153 @@ span.scale-rating label {
 
 
 
+/* مقاسات حتى 768px */
 @media only screen and (max-width: 768px) {
   header {
-    padding: 10px 20px; /* Reduce padding for smaller screens */
+    padding: 10px 20px; /* تقليل المسافة */
   }
-  .main h2{
-    font-size: 20px;
+ 
+  .main h2 {
+    font-size: 20px; /* تصغير النص */
   }
-
   .logo {
-    font-size: 1.5em; /* Smaller logo size for mobile */
+    font-size: 1.5em;
     letter-spacing: 3px;
   }
-  .style  a{
+  .style a {
     font-size: 10px;
     color: #ffffffb1;
   }
-
   section {
-    padding: 20px; /* Reduce section padding */
+    padding: 20px;
   }
-
   .content {
-    flex-direction: column; /* Stack cards vertically */
+    flex-direction: column;
     align-items: center;
   }
-
   .card {
-    width: 100%; /* Make cards take full width */
-    margin: 10px 0; /* Adjust spacing between cards */
+    width: 100%;
+    margin: 10px 0;
   }
-
   .main-btn {
-    padding: 0.7em 1.5em; /* Smaller button padding */
-    font-size: 1em; /* Adjust button font size */
+    padding: 0.7em 1.5em;
+    font-size: 1em;
     margin-left: 150px;
   }
-  .social-icons a{
+  .social-icons a {
     color: #ffffffaf;
     margin-left: 80px;
   }
   .footer .social-icons {
     display: flex;
-    flex-direction: row; /* اجعل الاتجاه أفقيًا */
-    justify-content: center; /* مركزة العناصر أفقيًا */
+    flex-direction: row;
+    justify-content: center;
   }
-
   .footer .social-icons a {
-    padding: 0 2px; /* تباعد أفقي بين الروابط */
+    padding: 0 2px;
     font-size: 20px;
     text-align: center;
   }
-  .footer-tittle, span{
+  .footer-tittle, span {
     font-size: 15px;
   }
 }
 
+/* مقاسات حتى 480px */
 @media only screen and (max-width: 480px) {
   .project-card {
-    width: 100%; /* Make project cards fully responsive */
+    width: 100%;
   }
-
   .tittle {
-    font-size: 1.8em; /* Adjust font size for titles */
+    font-size: 1.8em;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-icons {
+    align-items: center;
+  }
+}
+
+/* مقاسات حتى 390px */
+@media only screen and (max-width: 390px) {
+  body{
+    width: auto;
+  }
+  header {
+    padding: 20px 1px;
+  }
+  .main {
+    align-items: center;
+    text-align: center;
+    margin-left: 0; /* إلغاء المسافة الإضافية */
+    width: 100.5vh; /* جعل العرض يعادل عرض الشاشة بالكامل */
+  }
+  .main h2 {
+    font-size: 18px; /* تصغير النص بشكل أكبر */
+    width: 100%; /* التأكد من النص يشغل كامل العرض */
+  }
+  .logo {
+    font-size: 1.3em; /* تصغير حجم الشعار */
+    letter-spacing: 2px; /* تقليل التباعد بين الحروف */
+    margin-left: 20px;
+  }
+  .style {
+    margin-right: 20px; /* تقليل المسافة اليمنى */
+  }
+  .style a {
+    font-size: 8px; /* تصغير حجم النص */
+    color: #ffffffb1;
+    margin-right: 10px; /* تقليل المسافة بين الروابط */
+  }
+  section {
+    padding: 10px; /* تقليل المسافة حول الأقسام */
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer {
-    flex-direction: column; /* Stack footer content */
-    align-items: center;
+  .content .project-card{
+    width: 450px;
   }
-  .social-icons{
-    align-items: center;
+  .tittle {
+    margin-left: 70px;
+    text-align: center;
   }
+  .card {
+    width: 450px;
+    margin-left: 30px;
+  }
+  .main-btn {
+    padding: 0.5em 1em; /* تقليل الحواف الزائدة */
+    font-size: 20px; /* تصغير حجم الزر */
+    margin-left: 20px; /* إلغاء المسافة الزائدة */
+  }
+  .social-icons a {
+    color: #ffffffaf;
+    margin-left: 40px; /* تقليل المسافة بين الروابط الاجتماعية */
+  }
+  .footer{
+    width: 522px;
+  }
+  .footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .footer .social-icons a {
+    padding: 0 10px; /* تقليل padding */
+    font-size: 16px; /* تصغير حجم الروابط الاجتماعية */
+    text-align: center;
+  }
+  .footer-tittle, span {
+    font-size: 12px; /* تصغير حجم النصوص في التذييل */
+  }
+  .rate-us{
+    width: 522px;
+    margin-inline: 0px;
+  }
+  
 }
