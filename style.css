@@ -46,7 +46,7 @@ section {
 }
 
 .main {
-  width: 100vh;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -442,7 +442,6 @@ span.scale-rating label {
   header {
     padding: 10px 20px; /* تقليل المسافة */
   }
- 
   .main h2 {
     font-size: 20px; /* تصغير النص */
   }
@@ -508,9 +507,6 @@ span.scale-rating label {
 
 /* مقاسات حتى 390px */
 @media only screen and (max-width: 390px) {
-  body{
-    /* width: auto; */
-  }
   header {
     padding: 20px 1px;
   }
@@ -518,7 +514,7 @@ span.scale-rating label {
     align-items: center;
     text-align: center;
     margin-left: 0; /* إلغاء المسافة الإضافية */
-    width: 134.5vw; /* جعل العرض يعادل عرض الشاشة بالكامل */
+    width: 110vw; /* جعل العرض يعادل عرض الشاشة بالكامل */
   }
   .main h2 {
     font-size: 18px; /* تصغير النص بشكل أكبر */
@@ -527,10 +523,15 @@ span.scale-rating label {
   .logo {
     font-size: 1.3em; /* تصغير حجم الشعار */
     letter-spacing: 2px; /* تقليل التباعد بين الحروف */
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
   }
   .style {
-    margin-right: 20px; /* تقليل المسافة اليمنى */
+    margin-top: 10px; /* جعل منو "style" تحت اللوجو */
+    display: block;
+    text-align: center;
   }
   .style a {
     font-size: 8px; /* تصغير حجم النص */
@@ -544,29 +545,21 @@ span.scale-rating label {
     flex-direction: column;
     align-items: center;
   }
-
-  .content .project-card{
-    width: 450px;
-  }
-  .tittle {
-    margin-left: 70px;
-    text-align: center;
-  }
   .card {
-    width: 450px;
-    margin-left: 30px;
+    width: 100%;
+    margin: 5px 20px; /* تقليل المسافة حول البطاقات */
   }
   .main-btn {
     padding: 0.5em 1em; /* تقليل الحواف الزائدة */
-    font-size: 20px; /* تصغير حجم الزر */
-    margin-left: 20px; /* إلغاء المسافة الزائدة */
+    font-size: 0.8em; /* تصغير حجم الزر */
+    margin-left: 0; /* إلغاء المسافة الزائدة */
   }
   .social-icons a {
     color: #ffffffaf;
     margin-left: 40px; /* تقليل المسافة بين الروابط الاجتماعية */
   }
   .footer{
-    width: 522px;
+    width: 429.5px;
   }
   .footer .social-icons {
     display: flex;
@@ -582,8 +575,6 @@ span.scale-rating label {
     font-size: 12px; /* تصغير حجم النصوص في التذييل */
   }
   .rate-us{
-    width: 522px;
-    margin-inline: 0px;
+    width: 429.5px;
   }
-  
 }
