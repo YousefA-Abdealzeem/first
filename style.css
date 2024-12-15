@@ -467,8 +467,9 @@ span.scale-rating label {
         }
       
         .style a {
-          font-size: 1em;
-          padding-left: 15px;
+          font-size: 10px;
+          padding-left: 37px;
+          color: #ffffff90;
         }
       
         section {
@@ -495,6 +496,7 @@ span.scale-rating label {
         .social-icons a {
           font-size: 1.5em;
           margin-left: 50px;
+          color: rgba(255, 255, 255, 0.633);
         }
       
         .tittle {
@@ -510,6 +512,9 @@ span.scale-rating label {
         .card {
           width: 90%; /* تعديل العرض لتناسب الشاشات الصغيرة */
           margin: 10px 0;
+        }
+        .card .icon .info{
+          color: black;
         }
       
         .project-card {
