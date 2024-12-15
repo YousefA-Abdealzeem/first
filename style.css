@@ -509,7 +509,7 @@ span.scale-rating label {
 /* مقاسات حتى 390px */
 @media only screen and (max-width: 390px) {
   body{
-    width: auto;
+    /* width: auto; */
   }
   header {
     padding: 20px 1px;
@@ -518,7 +518,7 @@ span.scale-rating label {
     align-items: center;
     text-align: center;
     margin-left: 0; /* إلغاء المسافة الإضافية */
-    width: 100.5vh; /* جعل العرض يعادل عرض الشاشة بالكامل */
+    width: 134.5vw; /* جعل العرض يعادل عرض الشاشة بالكامل */
   }
   .main h2 {
     font-size: 18px; /* تصغير النص بشكل أكبر */
